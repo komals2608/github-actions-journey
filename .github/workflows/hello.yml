@@ -1,9 +1,9 @@
-name : Hello Actions
+name: Hello Actions
 on:
-  push
-  # start the list of the jobs
-  jobs:
+  push:
+
+jobs:
   say-hello:
-  runs-on: ubuntu-latest
-  steps:
-    -run: echo "Hello, GitHub Actions!"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions!"
